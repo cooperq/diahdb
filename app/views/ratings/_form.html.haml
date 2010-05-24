@@ -1,0 +1,10 @@
+- form_for(@rating) do |f|
+  = f.error_messages
+  
+  .field
+    = f.label :score
+    %br
+    = f.text_field :score
+
+  .actions
+    = f.submit

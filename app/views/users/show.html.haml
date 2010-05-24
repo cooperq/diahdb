@@ -1,0 +1,20 @@
+%p
+  %strong Username:
+  = @user.username
+%p
+  %strong Email:
+  = @user.email
+%p
+  %strong Password:
+  = @user.password
+%p
+  %strong Age:
+  = @user.age
+%p
+  %strong Location:
+  = @user.location
+%p
+  %strong About:
+  = @user.about
+
+== #{ link_to 'Edit', edit_user_path(@user) } | #{ link_to 'Back', users_path }
